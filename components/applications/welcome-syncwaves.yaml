@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: apps/welcome-php/overlays/syncwaves
-    repoURL: https://github.com/redhat-developer-demos/argocd-gitops-examples
+    repoURL: https://github.com/rfikree-racc/openshift-gitops-examples.git
     targetRevision: main
   syncPolicy:
     automated:
