@@ -14,7 +14,7 @@ spec:
   strategy: {}
   template:
     metadata:
-      creationTimestamp: null
+
       labels:
         app: bgd
     spec:
@@ -25,4 +25,4 @@ spec:
         - name: COLOR
           value: "blue"
         resources: {}
----
+

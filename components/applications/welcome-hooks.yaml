@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: welcome-hooks
-  namespace: openshift-gitops
+  namespace: argocd-gitops
 spec:
   destination:
     namespace: welcome-hooks
@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: apps/welcome-php/overlays/hooks
-    repoURL: https://github.com/redhat-developer-demos/openshift-gitops-examples
+    repoURL: https://github.com/redhat-developer-demos/argocd-gitops-examples
     targetRevision: main
   syncPolicy:
     automated:

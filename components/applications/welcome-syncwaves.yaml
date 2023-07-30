@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: welcome-syncwaves
-  namespace: openshift-gitops
+  namespace: argocd-gitops
 spec:
   destination:
     namespace: welcome
@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: apps/welcome-php/overlays/syncwaves
-    repoURL: https://github.com/redhat-developer-demos/openshift-gitops-examples
+    repoURL: https://github.com/redhat-developer-demos/argocd-gitops-examples
     targetRevision: main
   syncPolicy:
     automated:
