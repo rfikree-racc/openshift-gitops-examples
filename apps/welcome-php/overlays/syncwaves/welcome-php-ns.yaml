@@ -6,6 +6,6 @@ metadata:
     argocd.argoproj.io/sync-wave: "0"
   name: welcome
   labels:
-    argocd.argoproj.io/managed-by: argocd-gitops
+    argocd.argoproj.io/managed-by: argocd
 spec: {}
 status: {}

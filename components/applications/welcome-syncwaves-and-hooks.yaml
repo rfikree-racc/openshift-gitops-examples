@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: welcome-syncwaves-hooks
-  namespace: argocd-gitops
+  namespace: argocd
 spec:
   destination:
     namespace: welcome-waves-and-hooks

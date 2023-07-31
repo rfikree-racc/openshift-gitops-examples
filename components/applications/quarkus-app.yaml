@@ -4,13 +4,13 @@ kind: Namespace
 metadata:
   name: demo 
   labels:
-    argocd.argoproj.io/managed-by: argocd-gitops 
+    argocd.argoproj.io/managed-by: argocd 
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: quarkus-app
-  namespace: argocd-gitops
+  namespace: argocd
 spec:
   destination:
     namespace: demo
