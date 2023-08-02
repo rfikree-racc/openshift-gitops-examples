@@ -4,9 +4,11 @@ kind: ConfigMap
 metadata:
   name: vault-config
   namespace: vault-dev
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
   labels:
-    app.kubernetes.io/name: vault
-    app.kubernetes.io/instance: vault
+    app.kubernetes.io/name: welcome-php
+
 data:
   extraconfig-from-values.hcl: |-
     disable_mlock = true
