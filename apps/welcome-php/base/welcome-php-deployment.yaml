@@ -27,12 +27,12 @@ spec:
           requests:
             cpu: 50m
             memory: 256Mi
-        command:
-        - bin/sh
-        - -ec
-        args: 
-        - |
-          cp /vault/config/extraconfig-from-values.hcl /tmp/storageconfig.hcl;
+        # command:
+        # - bin/sh
+        # - -ec
+        # args: 
+        # - |
+        #   cp /vault/config/extraconfig-from-values.hcl /tmp/storageconfig.hcl;
         volumeMounts:
           - name: config
             mountPath: /vault/config
