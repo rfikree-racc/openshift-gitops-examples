@@ -14,11 +14,16 @@ spec:
   strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: welcome-php
     spec:
       containers:
       - image: quay.io/redhatworkshops/welcome-php:latest
         name: welcome-php
-        resources: {}
+        resources:
+          limits:
+            cpu: 100m
+            memory: 500Mi
+          requests:
+            cpu: 50m
+            memory: 256Mi

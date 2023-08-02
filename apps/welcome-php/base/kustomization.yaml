@@ -2,3 +2,4 @@ resources:
 - welcome-php-deployment.yaml
 - welcome-php-route.yaml
 - welcome-php-svc.yaml
+- welcome-config-map.yaml
