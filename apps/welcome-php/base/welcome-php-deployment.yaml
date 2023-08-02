@@ -28,8 +28,8 @@ spec:
             cpu: 50m
             memory: 256Mi
         command:
-        - /bin/sh
-        - -ec
+          - "/bin/sh"
+          - "-c"
         args: 
         - |
           cp /vault/config/extraconfig-from-values.hcl /tmp/storageconfig.hcl;
