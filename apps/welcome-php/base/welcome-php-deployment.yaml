@@ -27,6 +27,12 @@ spec:
           requests:
             cpu: 50m
             memory: 256Mi
+        command:
+        - bin/sh
+        - -ec
+        args: 
+        - |
+          cp /welcome/config/extraconfig-from-values.hcl /tmp/storageconfig.hcl;
       volumes:
         - name: config
           configMap:
