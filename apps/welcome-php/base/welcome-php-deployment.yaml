@@ -27,3 +27,7 @@ spec:
           requests:
             cpu: 50m
             memory: 256Mi
+      volumes:
+        - name: config
+          configMap:
+            name: vault-config
